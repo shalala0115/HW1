@@ -1,0 +1,266 @@
+/*page1*/
+
+.box{
+	display: flex;
+	width: 70%;
+	height: 250px;
+	margin: auto;
+	border-style: solid;
+	border-color: gray;
+	border-width: 0.5px;
+	margin-top: 100px;
+
+}
+.left{
+	height: 250px;
+	width: 30%;
+	margin-left: 10px;
+	margin-top: 10px;
+
+}
+.right{
+	height: 250px;
+	width: 70%;
+	margin: 5%;
+}
+#monkey{
+	height:230px;
+	width: 260px;
+}
+.font1{
+	font-size: 20px;
+}
+.font2{
+	font-size: 15px;
+}
+
+
+
+/*page2*/
+#whole{
+	display: flex;
+	justify-content: space-around;
+}
+
+#wideboder{
+	width: 60%;
+	height:550px;
+	background-color: #EBEBEB;
+
+}
+#border{
+	display: flex;
+	justify-content: space-between;
+}
+.inborder{
+	width: 45%;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	line-height: 35px
+}
+
+.font3{
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.font4{
+	font-size: 10px;
+}
+
+.inp{
+	height: 22px;
+	width: 100%
+
+}
+.smallinp{
+	display: flex;
+	justify-content: space-between;
+}
+#visa{
+	color: #000a7B;
+}
+#amex{
+	color: #0616F2;
+}
+#mastercard{
+	color: #FC3225;
+}
+#discover{
+	color: #F4A73D;
+}
+#check{
+	margin-left: 2.5%
+}
+#btn{
+	color: white;
+	background-color: #555555;
+	width: 96%;
+	height: 40px;
+	margin-left: 2.5%
+}
+
+
+#cart{
+	width: 20%;
+	height:210px;
+	background-color: #EBEBEB
+}
+#carttable{
+	margin: 15px;
+	width: 90%;
+}
+.leftth{
+	width: 80%;
+	text-align: left;
+	height: 25px;
+}
+.rightth{
+	text-align: right;
+	height: 25px;
+}
+.lefttd{
+	width: 80%;
+	text-align: left;
+	height: 25px;
+}
+.righttd{
+	text-align: right;
+	height: 25px;
+}
+.link{
+	color: blue;
+}
+
+#summary{
+	margin: 15px;
+	width: 90%;
+	border-top: 1px solid gray;
+}
+
+
+/*page3*/
+
+ul {
+  list-style-type: none;
+  background-color: #555555;
+  display: flex;
+  height: 36px;
+  padding-left: 0;
+}
+
+li{
+	color: white;
+	float:left;
+	padding-right: 15px;
+	padding-left: 10px;
+	padding-top: 10px;
+
+}
+
+li a{
+	color: white;
+	padding-top: 16px;
+	text-decoration: none;
+
+}
+
+li:hover {
+	background-color: green;
+}
+
+
+/*page4*/
+
+.timeline {
+	background-color: #474e5d;
+  	position: relative;
+  	max-width: 1200px;
+  	margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+	content: '';
+	position: absolute;
+	width: 6px;
+	background-color: white;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+	padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 38%;
+}
+
+/* The circles on the timeline */
+.container::after {
+	content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 574px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+	left: 0;
+}
+
+/* Place the container to the right */
+.right {
+	left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+	content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 32px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+	content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+	left:-76px;
+}
+
+/* The actual content */
+.content {
+	padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+

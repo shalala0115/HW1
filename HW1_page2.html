@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" href="HW1_style.css" rel="stylesheet"/>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>HW1_page2</title>
+</head>
+<body>
+	<div id = "whole">
+		<div id="wideboder">
+			<div id="border">
+				<form class="inborder">
+					<p class="font3">Billing Address</p>
+					<i class="fas fa-user"></i> Full name <br>
+					<input type="text" name="name" class="inp" placeholder="John M.Doe"><br>
+					
+					<i class="fas fa-envelope"></i> Email<br>
+					<input type="text" name="email" class="inp" placeholder="john@example.com"><br>
+					
+					<i class="far fa-address-card"></i> Address<br>
+					<input type="text" name="address" class="inp" placeholder="542 W. 15th Street"><br>
+
+					<i class="fas fa-university"></i> City<br>
+					<input type="text" name="City" class="inp" placeholder="New York"><br>
+
+					<div class="smallinp">
+						<div class="leftinp">
+							State <br>
+							<input type="text" name="state" class="inp" placeholder="NY">
+						</div>	
+						<div class="rightinp">
+							Zip<br>
+							<input type="text" name="zip" class="inp" placeholder="Zip">
+						</div>
+					</div>
+					
+				</form>
+				<form class="inborder">
+					<p class="font3">Payment</p>
+					Accepted Cards<br>
+					<i class="fab fa-cc-visa" id="visa"></i>
+					<i class="fab fa-cc-amex" id="amex"></i>
+					<i class="fab fa-cc-mastercard" id="mastercard"></i>
+					<i class="fab fa-cc-discover" id="discover"></i>
+
+					<br>Name on Card<br>
+					<input type="text" name="cardname" class="inp" placeholder="John More Doe"><br>
+
+					Credit card number<br>
+					<input type="text" name="cardnumber" class="inp" placeholder="1111-2222-3333-4444"><br>
+
+					EXP Month<br>
+					<input type="text" name="expmonth" class="inp" placeholder="September"><br>
+
+					<div class="smallinp">
+						<div class="leftinp">
+							EXP Year <br>
+							<input type="text" name="expyear" class="inp" placeholder="2018">
+						</div>	
+						<div class="rightinp">
+							CVV<br>
+							<input type="text" name="cvv" class="inp" placeholder="325">
+						</div>
+					</div>
+				</form>
+			</div>
+			<br>
+			<label>
+		  			<input type="checkbox" checked="checked" id="check">
+		  			shipping address same as billing
+			</label>
+			<br>
+			<br>
+			<button type="button" id="btn">continue to checkout</button>
+		</div>
+	
+	
+		<div id="cart" >
+			<table id = "carttable">
+				<tr>
+					<th class="leftth">Cart</th>
+					<th class="rightth"><i class="fas fa-shopping-cart">4</i></th>
+				</tr>
+				<tr>
+					<td class="lefttd"><a href=""  class="link">Item1</a></td>
+					<td class="righttd">$15</td>
+				</tr>
+				<tr>
+					<td class="lefttd"><a href=""  class="link">Item2</a></td>
+					<td class="righttd">$5</td>
+				</tr>
+				<tr>
+					<td class="lefttd"><a href=""  class="link">Item3</a></td>
+					<td class="righttd">$8</td>
+				</tr>
+				<tr>
+					<td class="lefttd"><a href=""  class="link">Item4</a></td>
+					<td class="righttd">$2</td>
+				</tr>
+			</table>
+			<table id="summary">
+				<tr>
+					<th class="leftth">Total</th>
+					<th class="rightth">$30</i></th>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
